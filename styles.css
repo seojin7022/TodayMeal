@@ -6,3 +6,11 @@
 #meal::marker {
     display: none;
 }
+
+button {
+    transition-duration: 200ms;
+}
+
+.date {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
