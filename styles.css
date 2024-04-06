@@ -14,3 +14,10 @@ button {
 .date {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.day_container {
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
