@@ -37,8 +37,10 @@ const refreshMeal = () => {
   dinner.append(newMeal);
 
   const year = today.getFullYear().toString();
-  const month = (today.getMonth() + 1).toString();
-  const date = today.getDate().toString();
+  const month = (today.getMonth() + 1).toString().padStart(2, '0');
+  const date = today.getDate().toString().padStart(2, '0');
+
+  console.log(year, month, date);
 
   fetch(
     `https://open.neis.go.kr/hub/mealServiceDietInfo?KEY=5bf6d0aa4370464793f2ed55b2269040&Type=json&ATPT_OFCDC_SC_CODE=R10&SD_SCHUL_CODE=8750161&MLSV_YMD=${
